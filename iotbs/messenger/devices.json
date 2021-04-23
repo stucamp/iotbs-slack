@@ -1,0 +1,23 @@
+{
+    "test1": {
+        "id": 10001 ,
+        "location": 85281,
+        "type": "text",
+        "width": 64,
+        "height": 32
+    },
+    "test2": { 
+        "id": 10002 , 
+        "location": 85282,
+        "type": "text",
+        "width": 32,
+        "height": 8
+    },
+    "test3": {
+        "id": 10003 ,
+        "location": 85283,
+        "type": "text",
+        "width": 16,
+        "height": 16
+    }
+}

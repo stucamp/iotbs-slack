@@ -1,0 +1,31 @@
+org: stucamp
+app: iotbs
+service: slack-mqtt-bridge
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: dev
+
+functions:
+  app:
+    handler: wsgi_handler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+custom:
+  functionBasePath: iotbs/
+  wsgi:
+    app: iotbs.app.app
+    pythonBin: python3 # Some systems with Python3 may require this
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: non-linux
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
+  - serverless-dotenv-plugin
+
+

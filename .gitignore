@@ -1,0 +1,44 @@
+# Testing / code coverage output
+.coverage
+coverage.xml
+nosetests.xml
+slack.log
+
+
+# IDE Files
+.vscode/
+.idea/
+
+# Build/Dist Files
+.python-version
+.cache/
+__pycache__
+*.egg-info
+*.swp
+*.egg
+.eggs
+*.pyc
+*.un~
+config/
+prop/
+dist/
+
+# Virtual Environments
+venv/
+build/
+
+# Credentials file
+.env
+*.env
+config.yaml
+
+# Serverless Files
+node_modules
+.serverless*
+.serverless/
+*wsgi*
+package-lock.json
+.creds
+
+#Certs
+certs/
